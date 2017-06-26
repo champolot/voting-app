@@ -1,0 +1,81 @@
+.create {
+  @include column;
+}
+
+.responses-container {
+  max-height: 270px;
+
+  overflow-y: scroll;
+}
+
+#poll-title {
+  margin-right: 14px;
+}
+
+.create input[type=text] {
+  margin: 10px 10px;
+
+  box-shadow: $box-shadow;
+}
+
+.create-button-row {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  min-width: 300px;
+
+  margin: 10px 30px;
+}
+
+.create-add-delete-button {
+  width: 30px;
+
+  padding: 5px;
+  margin: 1px;
+
+  background-color: $button-color;
+
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: $main-background-color;
+
+  border: 1px solid black;
+  border-radius: 50%;
+  box-shadow: $box-shadow;
+
+  cursor: pointer;
+}
+
+.create-add-delete-button:hover {
+  background-color: $container-color;
+
+  color: $button-text-color;
+}
+
+.create-submit-button {
+  width: 80px;
+
+  padding: 5px;
+  margin: 1px;
+
+  background-color: $button-color;
+
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: $main-background-color;
+
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: $box-shadow;
+
+  cursor: pointer;
+}
+
+.create-submit-button:hover {
+  background-color: $container-color;
+
+  color: $button-text-color;
+}

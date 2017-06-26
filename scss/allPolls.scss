@@ -1,0 +1,40 @@
+.poll-list-container {
+    @include list-container;
+}
+
+.poll-list-item {
+    width: 280px;
+
+    margin: 8px;
+    padding: 5px;
+
+    background-color: $button-color;
+
+    text-align: center;
+    font-weight: 600;
+    color: $main-background-color;
+
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: $box-shadow;
+
+    cursor: pointer;
+
+    @include laptop {
+        @include column;
+
+        height: 80px;
+    }
+
+    @include desktop {
+        @include column;
+
+        height: 120px;
+    }
+}
+
+.poll-list-item:hover {
+    background-color: $container-color;
+
+    color: $button-text-color;
+}

@@ -1,0 +1,64 @@
+.delete-modal {
+  @include column;
+
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.delete-container {
+  @include column;
+
+  width: 300px;
+  height: 200px;
+
+  background-color: $container-color;
+  border: 1px solid black;
+
+  text-align: center;
+  color: $primary-text-color;
+}
+
+.delete-text {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.delete-button-row {
+  display: flex;
+  justify-content: space-around;
+
+  width: 100%;
+}
+
+.delete-button {
+  width: 80px;
+
+  margin-top: 50px;
+  padding: 5px;
+
+  background-color: $button-color;
+
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: $main-background-color;
+
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: $box-shadow;
+
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: $container-color;
+
+  color: $button-text-color;
+}

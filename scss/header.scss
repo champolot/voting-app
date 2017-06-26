@@ -1,0 +1,92 @@
+.header {
+    display: flex;
+
+    padding-bottom: 10px;
+
+    text-align: center;
+    color: $button-color;
+
+    @include mobile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include tablet {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include laptop {
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    @include desktop {
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
+
+.title {
+    margin-left: 20px;
+
+    @include mobile {
+        font-size: $title-text-size - 10;
+    }
+
+    @include tablet {
+        font-size: $title-text-size - 8;
+    }
+
+    @include laptop {
+        font-size: $title-text-size - 6;
+    }
+
+    @include desktop {
+        font-size: $title-text-size;
+    }
+}
+
+.userArea {
+    @include column;
+
+    width: 170px;
+
+    @include laptop {
+        margin-right: 10px;
+    }
+
+    @include desktop {
+        margin-right: 10px;
+    }
+}
+
+.login {
+    width: 80px;
+
+    margin-bottom: 10px;
+    padding: 5px;
+
+    background-color: $button-color;
+
+    font-weight: 600;
+    color: $main-background-color;
+
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: $box-shadow;
+
+    cursor: pointer;
+}
+
+.login:hover {
+    background-color: $container-color;
+
+    color: $button-text-color;
+}
+
+.user {
+    font-weight: bold;
+}

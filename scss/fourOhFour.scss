@@ -1,0 +1,7 @@
+.fourOhFour {
+  @include column;
+
+  font-size: 26px;
+  font-weight: bold;
+  color: $primary-text-color;
+}

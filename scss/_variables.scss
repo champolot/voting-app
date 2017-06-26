@@ -1,0 +1,86 @@
+$primary-text-color: #2e3033;
+$button-text-color: #2A202B;
+
+$title-text-size: 36px;
+
+$main-background-color: #fcdfba;
+$container-color: #ededef;
+$button-color: #97463A;
+
+$box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.4);
+
+$mobile-width: 600px;
+$tablet-width: 900px;
+$laptop-width: 1200px;
+$desktop-width: 1800px;
+
+/*******************************
+*
+*            Mixins
+*
+********************************/
+
+@mixin mobile {
+  @media (max-width: #{ $mobile-width }) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{ $mobile-width + 1 }) and (max-width: #{ $laptop-width }) {
+      @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{ $laptop-width + 1 }) and (max-width: #{ $desktop-width }) {
+      @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{ $desktop-width + 1}) {
+    @content;
+  }
+}
+
+@mixin column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin title {
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  color: $primary-text-color;
+
+  @include mobile {
+    font-size: $title-text-size - 10;
+  }
+
+  @include tablet {
+    font-size: $title-text-size - 8;
+  }
+
+  @include laptop {
+    font-size: $title-text-size - 6;
+  }
+
+  @include desktop {
+    font-size: $title-text-size - 4;
+  }
+}
+
+@mixin list-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  width: 100%;
+  max-height: 400px;
+
+  overflow-y: scroll;
+}

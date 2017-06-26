@@ -1,0 +1,67 @@
+@import './scss/_variables.scss';
+
+@import './scss/app.scss';
+@import './scss/header.scss';
+@import './scss/home.scss';
+@import './scss/fourOhFour.scss';
+@import './scss/allPolls.scss';
+@import './scss/pollDetails.scss';
+@import './scss/results.scss';
+@import './scss/create.scss';
+@import './scss/createErrorModal.scss';
+@import './scss/myPolls.scss';
+@import './scss/shareModal.scss';
+@import './scss/deleteModal.scss';
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+    background-color: $main-background-color;
+}
+
+a {
+    color: $primary-text-color;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+/*******************************
+*
+*       Universal Classes
+*
+********************************/
+
+.display-container {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 60vh;
+
+    background-color: $container-color;
+
+    @include mobile {
+        width: 100%;
+    }
+
+    @include tablet {
+        width: 95%;
+    }
+
+    @include laptop {
+        width: 70%;
+
+        border: 1px solid black;
+        box-shadow: $box-shadow;
+    }
+
+    @include desktop {
+        width: 60%;
+
+        border: 1px solid black;
+        box-shadow: $box-shadow;
+    }
+}

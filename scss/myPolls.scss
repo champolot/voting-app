@@ -1,0 +1,62 @@
+.mypolls-container {
+  @include list-container;
+}
+
+.mypoll-list-item {
+  @include column;
+
+  width: 280px;
+
+  margin: 10px;
+  padding: 10px;
+
+  font-size: 18px;
+  font-weight: 500;
+  color: $primary-text-color;
+
+  border: 1px solid black;
+  box-shadow: $box-shadow;
+}
+
+.mypoll-list-link {
+  margin: 20px;
+
+  cursor: pointer;
+}
+
+.mypoll-list-link:hover {
+  color: $button-color;
+}
+
+.mypoll-button-row {
+  display: flex;
+  justify-content: space-around;
+
+  width: 95%;
+}
+
+.mypoll-item-button {
+  width: 60px;
+
+  padding: 5px;
+  margin: 1px;
+
+  background-color: $button-color;
+
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: $main-background-color;
+
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: $box-shadow;
+
+  cursor: pointer;
+}
+
+.mypoll-item-button:hover {
+  background-color: $container-color;
+
+  color: $button-text-color;
+}

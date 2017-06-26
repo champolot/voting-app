@@ -1,0 +1,59 @@
+.results {
+    @include column;
+
+    width: 100%;
+    max-height: 500px;
+
+    margin-bottom: 20px;
+
+    color: $primary-text-color;
+
+    @include mobile {
+        font-size: 16px;
+    }
+
+    @include tablet {
+        font-size: 20px;
+    }
+
+    @include laptop {
+        font-size: 22px;
+    }
+
+    @include desktop {
+        font-size: 22px;
+    }
+}
+
+.results-title {
+    margin-bottom: 10px;
+
+    font-size: 30px;
+    text-align: center;
+}
+
+.results-container {
+    @include list-container;
+
+    margin-bottom: 20px;
+}
+
+.chart {
+    flex-grow: 2;
+
+    max-width: 400px;
+
+    margin: 10px 10px;
+}
+
+.result-list {
+    justify-content: flex-end;
+    align-items: baseline;
+    flex-grow: 0;
+
+    max-width: 300px;
+
+    margin-top: 10px;
+
+    text-align: right;
+}
