@@ -2,10 +2,6 @@ const mongodb = require('mongodb'),
       MongoClient = mongodb.MongoClient,
       config = require('../config/main');
 
-// const user = 'thekholm80VotingApp';
-// const pass = 'thekholm80VotingAppFCCProject';
-// const dbUrl = `mongodb://${ user }:${ pass }@ds125262.mlab.com:25262/voting`;
-
 const mongo = {
   processUser: function (user, callback) {
     MongoClient.connect(config.dbUrl, (error, db) => {
